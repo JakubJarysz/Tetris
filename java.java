@@ -1,3 +1,0 @@
-dupa
-
-no siema Piotrek
