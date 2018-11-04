@@ -1,7 +1,15 @@
 package tetris;
 
+/**
+ * Klocek w kszta³cie litery L
+ * 
+ * @author Pitek
+ *
+ */
 public class RegularL extends Klocek{
-	
+	/**
+	 * Funkcja rysuj¹ca klocek
+	 */
 	public int[][] Draw(int[][] tab, int sign) {
 		
 		int x = super.getOsX();
@@ -36,6 +44,11 @@ public class RegularL extends Klocek{
 		}
 		return tab;
 	}
+	/**
+	 * Konstruktor tworz¹cy klocek na pocz¹tku planszy
+	 * @param tab macierz przestrzeni gry
+	 * @param position pozycja klocka
+	 */
 	public RegularL(int[][] tab, int position) {
 		super.osX=1;
 		super.osY=5;

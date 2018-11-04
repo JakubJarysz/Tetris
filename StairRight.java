@@ -1,6 +1,14 @@
 package tetris;
 
+/**
+ * Klasa reprezentuj¹ca klocek S
+ * @author Pitek
+ *
+ */
 public class StairRight extends Klocek{
+	/**
+	 * Funkcja rysuj¹ca klocek
+	 */
 	public int[][] Draw(int[][] tab, int sign) {
 		
 		int x = super.getOsX();
@@ -35,6 +43,12 @@ public class StairRight extends Klocek{
 		}
 		return tab;
 	}
+	/**
+	 * Konstruktor tworz¹cy klocek na pocz¹tku planszy
+	 * 
+	 * @param tab macierz przestrzeni gry
+	 * @param position pozycja klocka
+	 */
 	public StairRight(int[][] tab, int position) {
 		super.osX=1;
 		super.osY=5;

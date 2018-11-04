@@ -1,6 +1,14 @@
 package tetris;
 
 public class Mechanics {
+	
+	
+/**
+ * Funkcja sprawdzaj¹ca czy w któryœ wiersz tablicy jest wype³niony klockami
+ * 
+ * @param tab macierz przestrzeni gry
+ * @return zwraca tablice z numerami wierszy, które s¹ wype³nione w ca³oœci
+ */
 	public static int[] AllInRow(int[][] tab) {
 		int[] fullRows = new int[4];
 		int counter = 0;
@@ -17,6 +25,12 @@ public class Mechanics {
 		return fullRows;
 		
 	}
+	/**
+	 * Funkcja usuwaj¹ca z tabeli wiersze w ca³oœci wype³nione klockami, a nastêpnie przesuwaj¹ca klocki nad nimi o jedno pole ni¿ej
+	 * 
+	 * @param tab macierz przestrzeni gry
+	 * @return zwraca tablice gry po wykonaniu funkcji
+	 */
 	public static int[][] DeletingRows(int[][] tab){
 		int[] fullRows = AllInRow(tab);
 		for(int i=0;i<4;i++) {
